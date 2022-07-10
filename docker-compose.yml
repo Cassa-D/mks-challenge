@@ -3,8 +3,24 @@ version: '3'
 services:
   app:
     build: .
-    entrypoint: sh -c "yarn install && yarn start:dev"
+    entrypoint: sh -c "yarn install && yarn start"
     ports:
       - "3000:3000"
     volumes:
-      - .:home/node/app
+      - .:/home/node/app
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: "mysql"
+
+  db:
+    container_name: db-mysql
+    environment:
+      - MYSQL_DATABASE=test
+      - MYSQL_ROOT_PASSWORD=14621462
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    volumes:
+      - .:/home/node/app
+    image: mysql
+    ports:
+      - "3306:3306"

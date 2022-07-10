@@ -65,6 +65,6 @@ export class MoviesController {
     }
 
     await this.moviesService.remove(id);
-    return response.status(HttpStatus.OK).json();
+    return response.status(HttpStatus.NO_CONTENT).json();
   }
 }

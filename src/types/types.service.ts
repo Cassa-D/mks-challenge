@@ -32,6 +32,15 @@ export class TypesService {
     });
   }
 
+  findOneById(id: string) {
+    return this.typeRepo.findOne({
+      where: {
+        id,
+      },
+      relations: ['movies'],
+    });
+  }
+
   async remove(id: string) {
     return this.typeRepo.delete({ id });
   }
