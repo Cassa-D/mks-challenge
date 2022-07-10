@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MoviesModule } from './movies/movies.module';
 import { Movie } from './movies/entities/movie.entity';
+import { Type } from './types/entities/type.entity';
+import { TypesModule } from './types/types.module';
 
 @Module({
   imports: [
@@ -14,12 +16,13 @@ import { Movie } from './movies/entities/movie.entity';
       username: 'root',
       password: '14621462',
       database: 'test',
-      autoLoadEntities: true,
       synchronize: true,
       logging: true,
       retryAttempts: 2,
+      entities: [Movie, Type],
     }),
     MoviesModule,
+    TypesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

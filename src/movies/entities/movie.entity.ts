@@ -1,4 +1,11 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
+import { Type } from '../../types/entities/type.entity';
 
 @Entity()
 export class Movie {
@@ -14,8 +21,11 @@ export class Movie {
   @Column()
   author: string;
 
-  // @Column()
-  // types: string[]; // TODO - switch to TypeEntity
+  @ManyToMany(() => Type, (type) => type.movies, {
+    onDelete: 'CASCADE',
+  })
+  @JoinTable()
+  types: Type[];
 
   @Column()
   size: number; // min

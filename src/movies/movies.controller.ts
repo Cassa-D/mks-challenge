@@ -20,17 +20,13 @@ export class MoviesController {
   @Post()
   async create(@Res() response, @Body() movie: CreateMovieDto) {
     const newMovie = await this.moviesService.create(movie);
-    return response.status(HttpStatus.CREATED).json({
-      newMovie,
-    });
+    return response.status(HttpStatus.CREATED).json(newMovie);
   }
 
   @Get()
   async findAll(@Res() response) {
     const movies = await this.moviesService.findAll();
-    return response.status(HttpStatus.OK).json({
-      movies,
-    });
+    return response.status(HttpStatus.OK).json(movies);
   }
 
   @Get(':id')
@@ -42,9 +38,7 @@ export class MoviesController {
       return response.status(HttpStatus.NOT_FOUND).json();
     }
 
-    return response.status(HttpStatus.OK).json({
-      movie,
-    });
+    return response.status(HttpStatus.OK).json(movie);
   }
 
   @Patch(':id')
@@ -60,9 +54,7 @@ export class MoviesController {
 
     await this.moviesService.update(id, movie);
     const uMovie = await this.moviesService.findOne(id);
-    return response.status(HttpStatus.OK).json({
-      movie: uMovie,
-    });
+    return response.status(HttpStatus.OK).json(uMovie);
   }
 
   @Delete(':id')
