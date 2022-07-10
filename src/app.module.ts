@@ -11,11 +11,12 @@ import { TypesModule } from './types/types.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'mysql://b1deb10c280d05:071935ce@us-cdbr-east-06.cleardb.net/heroku_5f5d912250d46b7?reconnect=true',
+      host: 'cleardb',
       port: 3306,
       username: 'root',
       password: '14621462',
-      database: 'test',
+      database:
+        'mysql://b1deb10c280d05:071935ce@us-cdbr-east-06.cleardb.net/heroku_5f5d912250d46b7?reconnect=true',
       retryAttempts: 2,
       entities: [Movie, Type],
     }),
