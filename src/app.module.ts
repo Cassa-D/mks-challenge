@@ -9,14 +9,14 @@ import { TypesModule } from './types/types.module';
 
 @Module({
   imports: [
+    // mysql://b1deb10c280d05:071935ce@us-cdbr-east-06.cleardb.net/heroku_5f5d912250d46b7?reconnect=true
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'cleardb',
+      host: 'us-cdbr-east-06.cleardb.net',
       port: 3306,
-      username: 'root',
-      password: '14621462',
-      database:
-        'mysql://b1deb10c280d05:071935ce@us-cdbr-east-06.cleardb.net/heroku_5f5d912250d46b7?reconnect=true',
+      username: 'b1deb10c280d05',
+      password: '071935ce',
+      database: 'heroku_5f5d912250d46b7',
       retryAttempts: 2,
       entities: [Movie, Type],
     }),
