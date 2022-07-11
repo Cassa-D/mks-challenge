@@ -1,73 +1,66 @@
+# Movie Catalog
+
+Este projeto é um simples CRUD de uma API RESTful, para a criação e listagem de um catálogo de filmes.
+
+### Tecnologias utilizas:
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="50" alt="TypeOrm Logo" /></a>
+  <a href="https://typeorm.io/" target="blank"><img src="https://github.com/typeorm/typeorm/raw/master/resources/logo_big.png" width="100" alt="Nest Logo" /></a>
+  <a href="https://heroku.com/" target="blank"><img src="https://www.herokucdn.com/deploy/button.png" width="200" alt="Heroku Logo" /></a>
+  <a href="https://swagger.io/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Swagger-logo.png/50px-Swagger-logo.png" width="50" alt="Swagger Logo" /></a>
+  <a href="https://www.typescriptlang.org/" target="blank"><img src="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png" width="50" alt="TypeScript Logo" /></a>
+  <a href="https://www.docker.com/" target="blank"><img src="https://www.docker.com/wp-content/uploads/2022/01/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp" width="200" alt="Docker Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+### Pré Utilização de cada tecnologia:
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- TS: 6 meses de estudo + 1 ano e meio de trabalho.
+- TypeOrm: N/A.
+- NestJs: N/A.
+- Heroku: ~6 meses de estudo.
+- Swagger: N/A.
+- Docker: ~1 mês de estudo.
 
-## Description
+## Links importantes
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [API](https://mks-challenge.herokuapp.com/movies)
+- [Swagger](https://app.swaggerhub.com/apis-docs/TRICECAUTOPO/mks-catalog/1.0.0)
 
-## Installation
+## Instalação
 
 ```bash
+$ git clone git@github.com:Cassa-D/mks-challenge.git
+
+$ yarn install
+# Ou npm se preferir
 $ npm install
 ```
 
-## Running the app
+## Rodando a API
 
 ```bash
 # development
-$ npm run start
+$ yarn start
 
 # watch mode
-$ npm run start:dev
+$ yarn start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn start:prod
+
+# docker (default development)
+$ docker-compose up
 ```
 
 ## Test
 
-```bash
-# unit tests
-$ npm run test
+**Não foi feito nenhum teste**
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+---
+<p align="center">
+    <a href="https://github.com/Cassa-D" target="blank">Git Hub</a>
+    -
+    <a href="https://www.linkedin.com/in/cassiano-doederlein/" target="blank">Linkedin</a>
+    - Email: tricecautopo@gmail.com
+</p>
