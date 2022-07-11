@@ -55,7 +55,7 @@ $ docker-compose up
 
 ## Test
 
-**Não foi feito nenhum teste**
+> Não foi feito nenhum teste
 
 ---
 <p align="center">
